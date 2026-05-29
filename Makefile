@@ -1,5 +1,5 @@
 CXX      := g++
-CXXFLAGS := -std=c++17 -Wall -Wextra -O2
+CXXFLAGS := -std=gnu++17 -Wall -Wextra -O2
 
 # Розташування бінарників
 BIN1 := task1_proc_mem/target

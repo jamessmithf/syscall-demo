@@ -252,7 +252,8 @@ int main(int argc, char *argv[])
             perror("read");
             break;
         }
-        if (n != (ssize_t)sizeof(ev)) continue;  /* частковий запис ядра */
+        if (n == 0) break;                        /* EOF (FIFO writer closed) */
+        if (n != (ssize_t)sizeof(ev)) continue;   /* частковий запис ядра */
 
         /*
          * Фільтруємо:

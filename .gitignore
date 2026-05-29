@@ -1,0 +1,5 @@
+.idea/
+task1_proc_mem/target
+task1_proc_mem/monitor
+task2_kbd_hook/kbd_hook
+task2_kbd_hook/inject_events
